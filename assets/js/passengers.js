@@ -12,6 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeButtons = document.querySelectorAll('.close-modal');
     const confirmDeleteBtn = document.getElementById('confirm-delete');
 
+    // Check user role and hide register button if passenger
+    const userRole = localStorage.getItem('role');
+    const isPassenger = userRole === 'Passenger';
+    if (isPassenger && registerBtn) {
+        registerBtn.style.display = 'none';
+    }
+
     // Form elements
     const registerForm = document.getElementById('register-form');
     const editForm = document.getElementById('edit-passenger-form');
