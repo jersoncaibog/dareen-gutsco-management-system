@@ -19,9 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Destination fare mapping
     const DESTINATION_FARES = {
-        'Tacloban': 280.00,
-        'Borongan': 250.00,
-        'Oras': 500.00
+        'Mercedes': 50.00,
+        'Quinapondan': 100.00,
+        'Giporlos': 100.00,
+        'Balangiga': 120.00,
+        'Lawaan': 150.00,
+        'Marabut': 180.00,
+        'Basey': 200.00,
+        'Tacloban': 250.00
     };
 
     // Add destination change handler

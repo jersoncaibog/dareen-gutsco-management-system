@@ -152,7 +152,7 @@ VALUES ('RFID001', 'Cash-in', 100.00, NULL, NULL, 600.00),
         'RFID001',
         'Payment',
         50.00,
-        'Guiuan Terminal',
+        'Mercedes',
         50.00,
         550.00
     ),
@@ -167,18 +167,18 @@ VALUES ('RFID001', 'Cash-in', 100.00, NULL, NULL, 600.00),
     (
         'RFID002',
         'Payment',
-        150.00,
-        'Borongan',
-        150.00,
-        1050.00
+        100.00,
+        'Quinapondan',
+        100.00,
+        1100.00
     ),
     (
         'RFID003',
         'Payment',
-        500.00,
+        250.00,
         'Tacloban',
-        500.00,
-        1000.00
+        250.00,
+        1250.00
     ),
     (
         'RFID003',
@@ -192,7 +192,7 @@ VALUES ('RFID001', 'Cash-in', 100.00, NULL, NULL, 600.00),
         'RFID004',
         'Payment',
         50.00,
-        'Guiuan Terminal',
+        'Mercedes',
         50.00,
         150.00
     ),
@@ -207,36 +207,36 @@ VALUES ('RFID001', 'Cash-in', 100.00, NULL, NULL, 600.00),
     (
         'RFID005',
         'Payment',
-        250.00,
+        200.00,
         'Basey',
-        250.00,
-        750.00
+        200.00,
+        800.00
     ),
     ('RFID006', 'Cash-in', 100.00, NULL, NULL, 400.00),
     (
         'RFID006',
         'Payment',
         150.00,
-        'Sulat',
+        'Lawaan',
         150.00,
         250.00
     ),
     (
         'RFID007',
         'Payment',
-        50.00,
-        'Guiuan Terminal',
-        50.00,
-        200.00
+        100.00,
+        'Giporlos',
+        100.00,
+        150.00
     ),
     ('RFID007', 'Cash-in', 50.00, NULL, NULL, 250.00),
     (
         'RFID008',
         'Payment',
-        100.00,
-        'San Julian',
-        100.00,
-        0.00
+        120.00,
+        'Balangiga',
+        120.00,
+        -20.00
     ),
     (
         'RFID009',
@@ -249,27 +249,27 @@ VALUES ('RFID001', 'Cash-in', 100.00, NULL, NULL, 600.00),
     (
         'RFID009',
         'Payment',
-        300.00,
-        'Borongan',
-        300.00,
-        1400.00
+        180.00,
+        'Marabut',
+        180.00,
+        1520.00
     ),
     ('RFID010', 'Cash-in', 100.00, NULL, NULL, 800.00),
     (
         'RFID010',
         'Payment',
         50.00,
-        'Guiuan Terminal',
+        'Mercedes',
         50.00,
         750.00
     ),
     (
         'RFID011',
         'Payment',
-        500.00,
+        250.00,
         'Tacloban',
-        500.00,
-        450.00
+        250.00,
+        700.00
     ),
     (
         'RFID012',
@@ -282,17 +282,17 @@ VALUES ('RFID001', 'Cash-in', 100.00, NULL, NULL, 600.00),
     (
         'RFID013',
         'Payment',
-        200.00,
-        'Borongan',
-        200.00,
-        250.00
+        100.00,
+        'Quinapondan',
+        100.00,
+        350.00
     ),
     ('RFID014', 'Cash-in', 300.00, NULL, NULL, 900.00),
     (
         'RFID015',
         'Payment',
         50.00,
-        'Guiuan Terminal',
+        'Mercedes',
         50.00,
         70.00
     ),
@@ -307,18 +307,18 @@ VALUES ('RFID001', 'Cash-in', 100.00, NULL, NULL, 600.00),
     (
         'RFID016',
         'Payment',
-        1000.00,
+        250.00,
         'Tacloban',
-        1000.00,
-        1100.00
+        250.00,
+        1850.00
     ),
     (
         'RFID017',
         'Payment',
-        1000.00,
-        'Borongan',
-        1000.00,
-        2000.00
+        200.00,
+        'Basey',
+        200.00,
+        2800.00
     ),
     (
         'RFID017',
@@ -332,27 +332,27 @@ VALUES ('RFID001', 'Cash-in', 100.00, NULL, NULL, 600.00),
     (
         'RFID018',
         'Payment',
-        50.00,
-        'Sulat',
-        50.00,
-        100.00
+        150.00,
+        'Lawaan',
+        150.00,
+        0.00
     ),
     (
         'RFID019',
         'Payment',
-        25.00,
-        'San Julian',
-        25.00,
-        50.00
+        100.00,
+        'Giporlos',
+        100.00,
+        0.00
     ),
     ('RFID019', 'Cash-in', 50.00, NULL, NULL, 100.00),
     (
         'RFID020',
         'Payment',
-        100.00,
-        'Basey',
-        100.00,
-        400.00
+        180.00,
+        'Marabut',
+        180.00,
+        320.00
     ),
     (
         'RFID001',
