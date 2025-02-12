@@ -1,506 +1,58 @@
-INSERT INTO Passenger (
-        RFID,
-        FirstName,
-        LastName,
-        PhoneNumber,
-        CurrentBalance
-    )
-VALUES ('RFID001', 'John', 'Doe', '09123456789', 500.00),
-    (
-        'RFID002',
-        'Jane',
-        'Smith',
-        '09234567890',
-        1000.00
-    ),
-    (
-        'RFID003',
-        'Mary',
-        'Johnson',
-        '09345678901',
-        1500.00
-    ),
-    (
-        'RFID004',
-        'James',
-        'Brown',
-        '09456789012',
-        200.00
-    ),
-    (
-        'RFID005',
-        'Patricia',
-        'Davis',
-        '09567890123',
-        800.00
-    ),
-    (
-        'RFID006',
-        'Michael',
-        'Miller',
-        '09678901234',
-        300.00
-    ),
-    (
-        'RFID007',
-        'Linda',
-        'Wilson',
-        '09789012345',
-        250.00
-    ),
-    (
-        'RFID008',
-        'Robert',
-        'Moore',
-        '09890123456',
-        100.00
-    ),
-    (
-        'RFID009',
-        'Barbara',
-        'Taylor',
-        '09123456780',
-        1200.00
-    ),
-    (
-        'RFID010',
-        'William',
-        'Anderson',
-        '09234567881',
-        700.00
-    ),
-    (
-        'RFID011',
-        'Elizabeth',
-        'Thomas',
-        '09345678902',
-        950.00
-    ),
-    (
-        'RFID012',
-        'David',
-        'Jackson',
-        '09456789013',
-        0.00
-    ),
-    (
-        'RFID013',
-        'Jennifer',
-        'White',
-        '09567890124',
-        450.00
-    ),
-    (
-        'RFID014',
-        'Richard',
-        'Harris',
-        '09678901235',
-        600.00
-    ),
-    (
-        'RFID015',
-        'Susan',
-        'Martin',
-        '09789012346',
-        120.00
-    ),
-    (
-        'RFID016',
-        'Joseph',
-        'Thompson',
-        '09890123457',
-        2000.00
-    ),
-    (
-        'RFID017',
-        'Sarah',
-        'Garcia',
-        '09123456782',
-        3000.00
-    ),
-    (
-        'RFID018',
-        'Charles',
-        'Martinez',
-        '09234567883',
-        50.00
-    ),
-    (
-        'RFID019',
-        'Karen',
-        'Robinson',
-        '09345678903',
-        75.00
-    ),
-    (
-        'RFID020',
-        'Thomas',
-        'Clark',
-        '09456789014',
-        500.00
-    );
-INSERT INTO Transactions (
-        RFID,
-        TransactionType,
-        Amount,
-        Destination,
-        Fare,
-        RemainingBalance
-    )
-VALUES ('RFID001', 'Cash-in', 100.00, NULL, NULL, 600.00),
-    (
-        'RFID001',
-        'Payment',
-        50.00,
-        'Mercedes',
-        50.00,
-        550.00
-    ),
-    (
-        'RFID002',
-        'Cash-in',
-        200.00,
-        NULL,
-        NULL,
-        1200.00
-    ),
-    (
-        'RFID002',
-        'Payment',
-        100.00,
-        'Quinapondan',
-        100.00,
-        1100.00
-    ),
-    (
-        'RFID003',
-        'Payment',
-        250.00,
-        'Tacloban',
-        250.00,
-        1250.00
-    ),
-    (
-        'RFID003',
-        'Cash-in',
-        300.00,
-        NULL,
-        NULL,
-        1300.00
-    ),
-    (
-        'RFID004',
-        'Payment',
-        50.00,
-        'Mercedes',
-        50.00,
-        150.00
-    ),
-    (
-        'RFID005',
-        'Cash-in',
-        200.00,
-        NULL,
-        NULL,
-        1000.00
-    ),
-    (
-        'RFID005',
-        'Payment',
-        200.00,
-        'Basey',
-        200.00,
-        800.00
-    ),
-    ('RFID006', 'Cash-in', 100.00, NULL, NULL, 400.00),
-    (
-        'RFID006',
-        'Payment',
-        150.00,
-        'Lawaan',
-        150.00,
-        250.00
-    ),
-    (
-        'RFID007',
-        'Payment',
-        100.00,
-        'Giporlos',
-        100.00,
-        150.00
-    ),
-    ('RFID007', 'Cash-in', 50.00, NULL, NULL, 250.00),
-    (
-        'RFID008',
-        'Payment',
-        120.00,
-        'Balangiga',
-        120.00,
-        -20.00
-    ),
-    (
-        'RFID009',
-        'Cash-in',
-        500.00,
-        NULL,
-        NULL,
-        1700.00
-    ),
-    (
-        'RFID009',
-        'Payment',
-        180.00,
-        'Marabut',
-        180.00,
-        1520.00
-    ),
-    ('RFID010', 'Cash-in', 100.00, NULL, NULL, 800.00),
-    (
-        'RFID010',
-        'Payment',
-        50.00,
-        'Mercedes',
-        50.00,
-        750.00
-    ),
-    (
-        'RFID011',
-        'Payment',
-        250.00,
-        'Tacloban',
-        250.00,
-        700.00
-    ),
-    (
-        'RFID012',
-        'Cash-in',
-        1000.00,
-        NULL,
-        NULL,
-        1000.00
-    ),
-    (
-        'RFID013',
-        'Payment',
-        100.00,
-        'Quinapondan',
-        100.00,
-        350.00
-    ),
-    ('RFID014', 'Cash-in', 300.00, NULL, NULL, 900.00),
-    (
-        'RFID015',
-        'Payment',
-        50.00,
-        'Mercedes',
-        50.00,
-        70.00
-    ),
-    (
-        'RFID016',
-        'Cash-in',
-        100.00,
-        NULL,
-        NULL,
-        2100.00
-    ),
-    (
-        'RFID016',
-        'Payment',
-        250.00,
-        'Tacloban',
-        250.00,
-        1850.00
-    ),
-    (
-        'RFID017',
-        'Payment',
-        200.00,
-        'Basey',
-        200.00,
-        2800.00
-    ),
-    (
-        'RFID017',
-        'Cash-in',
-        500.00,
-        NULL,
-        NULL,
-        2500.00
-    ),
-    ('RFID018', 'Cash-in', 100.00, NULL, NULL, 150.00),
-    (
-        'RFID018',
-        'Payment',
-        150.00,
-        'Lawaan',
-        150.00,
-        0.00
-    ),
-    (
-        'RFID019',
-        'Payment',
-        100.00,
-        'Giporlos',
-        100.00,
-        0.00
-    ),
-    ('RFID019', 'Cash-in', 50.00, NULL, NULL, 100.00),
-    (
-        'RFID020',
-        'Payment',
-        180.00,
-        'Marabut',
-        180.00,
-        320.00
-    ),
-    (
-        'RFID001',
-        'Cash-in',
-        500.00,
-        NULL,
-        NULL,
-        1050.00
-    ),
-    (
-        'RFID002',
-        'Payment',
-        200.00,
-        'Tacloban',
-        200.00,
-        850.00
-    ),
-    (
-        'RFID003',
-        'Cash-in',
-        1000.00,
-        NULL,
-        NULL,
-        2300.00
-    ),
-    ('RFID004', 'Cash-in', 200.00, NULL, NULL, 350.00),
-    (
-        'RFID005',
-        'Payment',
-        750.00,
-        'Borongan',
-        750.00,
-        0.00
-    ),
-    ('RFID006', 'Cash-in', 500.00, NULL, NULL, 750.00),
-    ('RFID007', 'Cash-in', 300.00, NULL, NULL, 550.00),
-    ('RFID008', 'Cash-in', 100.00, NULL, NULL, 100.00),
-    (
-        'RFID009',
-        'Payment',
-        500.00,
-        'Tacloban',
-        500.00,
-        900.00
-    ),
-    (
-        'RFID010',
-        'Payment',
-        150.00,
-        'Sulat',
-        150.00,
-        600.00
-    ),
-    ('RFID011', 'Cash-in', 500.00, NULL, NULL, 950.00),
-    (
-        'RFID012',
-        'Payment',
-        500.00,
-        'Basey',
-        500.00,
-        500.00
-    ),
-    ('RFID013', 'Cash-in', 200.00, NULL, NULL, 450.00),
-    (
-        'RFID014',
-        'Payment',
-        200.00,
-        'San Julian',
-        200.00,
-        700.00
-    ),
-    ('RFID015', 'Cash-in', 50.00, NULL, NULL, 120.00);
-INSERT INTO Users (RFID, Username, Email, Password, Role)
-VALUES (
-        'RFID001',
-        'johndoe',
-        'johndoe@example.com',
-        'hashed_password_1',
-        'Passenger'
-    ),
-    (
-        'RFID002',
-        'janesmith',
-        'janesmith@example.com',
-        'hashed_password_2',
-        'Passenger'
-    ),
-    (
-        'RFID003',
-        'maryjohnson',
-        'maryjohnson@example.com',
-        'hashed_password_3',
-        'Passenger'
-    ),
-    (
-        NULL,
-        'adminuser',
-        'admin@example.com',
-        'hashed_password_4',
-        'Admin'
-    ),
-    (
-        NULL,
-        'operator1',
-        'operator1@example.com',
-        'hashed_password_5',
-        'Operator'
-    ),
-    (
-        NULL,
-        'operator2',
-        'operator2@example.com',
-        'hashed_password_6',
-        'Operator'
-    ),
-    (
-        'RFID004',
-        'jamesbrown',
-        'jamesbrown@example.com',
-        'hashed_password_7',
-        'Passenger'
-    ),
-    (
-        'RFID005',
-        'patriciadavis',
-        'patriciadavis@example.com',
-        'hashed_password_8',
-        'Passenger'
-    ),
-    (
-        'RFID006',
-        'michaelmiller',
-        'michaelmiller@example.com',
-        'hashed_password_9',
-        'Passenger'
-    ),
-    (
-        'RFID007',
-        'lindawilson',
-        'lindawilson@example.com',
-        'hashed_password_10',
-        'Passenger'
-    );
--- Insert default admin user (password: admin123)
-INSERT INTO Users (Username, Email, Password, Role)
-VALUES (
-        'admin',
-        'admin@example.com',
-        '$2b$10$5QZX.QyPv0QNfnCjhz5EYOYJWzEL3X5tGz6HqF3RBGKwO4YEQb0Uy',
-        'Admin'
-    );
+INSERT INTO Passenger (RFID, FirstName, LastName, PhoneNumber, CurrentBalance)
+VALUES 
+    ('10000001', 'John',      'Doe',      '09123456789', 500.00),
+    ('10000002', 'Jane',      'Smith',    '09234567890', 1000.00),
+    ('10000003', 'Mary',      'Johnson',  '09345678901', 1500.00),
+    ('10000004', 'James',     'Brown',    '09456789012', 200.00),
+    ('10000005', 'Patricia',  'Davis',    '09567890123', 800.00),
+    ('10000006', 'Michael',   'Miller',   '09678901234', 300.00),
+    ('10000007', 'Linda',     'Wilson',   '09789012345', 250.00),
+    ('10000008', 'Robert',    'Moore',    '09890123456', 100.00),
+    ('10000009', 'Barbara',   'Taylor',   '09123456780', 1200.00),
+    ('10000010', 'William',   'Anderson', '09234567881', 700.00),
+    ('10000011', 'Elizabeth', 'Thomas',   '09345678902', 950.00),
+    ('10000012', 'David',     'Jackson',  '09456789013', 0.00),
+    ('10000013', 'Jennifer',  'White',    '09567890124', 450.00),
+    ('10000014', 'Richard',   'Harris',   '09678901235', 600.00),
+    ('10000015', 'Susan',     'Martin',   '09789012346', 120.00),
+    ('10000016', 'Joseph',    'Thompson', '09890123457', 2000.00),
+    ('10000017', 'Sarah',     'Garcia',   '09123456782', 3000.00),
+    ('10000018', 'Charles',   'Martinez', '09234567883', 50.00),
+    ('10000019', 'Karen',     'Robinson', '09345678903', 75.00),
+    ('10000020', 'Thomas',    'Clark',    '09456789014', 500.00);
+
+INSERT INTO Transactions (TransactionID, RFID, TransactionType, Amount, Destination, Fare, RemainingBalance, Timestamp)
+VALUES 
+    (1,  '10000001', 'Cash-in',  100.00, NULL,          NULL,  600.00,  '2024-03-01 08:00:00'),
+    (2,  '10000001', 'Payment',   50.00, 'Mercedes',     50.00, 550.00,  '2024-03-01 09:15:00'),
+    (3,  '10000002', 'Cash-in',  200.00, NULL,          NULL,  1200.00, '2024-03-01 10:30:00'),
+    (4,  '10000002', 'Payment',  150.00, 'Lawaan',      150.00, 1050.00, '2024-03-01 11:45:00'),
+    (5,  '10000003', 'Payment',  250.00, 'Tacloban',    250.00, 1000.00, '2024-03-01 13:00:00'),
+    (6,  '10000003', 'Cash-in',  300.00, NULL,          NULL,  1300.00, '2024-03-01 14:15:00'),
+    (7,  '10000004', 'Payment',   50.00, 'Mercedes',     50.00, 150.00,  '2024-03-01 15:30:00'),
+    (8,  '10000005', 'Cash-in',  200.00, NULL,          NULL,  1000.00, '2024-03-01 16:45:00'),
+    (9,  '10000005', 'Payment',  200.00, 'Basey',       200.00, 750.00,  '2024-03-02 08:00:00'),
+    (10, '10000006', 'Cash-in',  100.00, NULL,          NULL,  400.00,  '2024-03-02 09:15:00'),
+    (11, '10000006', 'Payment',  100.00, 'Quinapondan', 100.00, 250.00,  '2024-03-02 10:30:00'),
+    (12, '10000007', 'Payment',   50.00, 'Mercedes',     50.00, 200.00,  '2024-03-02 11:45:00'),
+    (13, '10000007', 'Cash-in',   50.00, NULL,          NULL,  250.00,  '2024-03-02 13:00:00'),
+    (14, '10000008', 'Payment',  100.00, 'Giporlos',    100.00, 0.00,   '2024-03-02 14:15:00'),
+    (15, '10000009', 'Cash-in',  500.00, NULL,          NULL,  1700.00, '2024-03-02 15:30:00'),
+    (16, '10000009', 'Payment',  120.00, 'Balangiga',   120.00, 1400.00, '2024-03-02 16:45:00'),
+    (17, '10000010', 'Cash-in',  100.00, NULL,          NULL,  800.00,  '2024-03-03 08:00:00'),
+    (18, '10000010', 'Payment',   50.00, 'Mercedes',     50.00, 750.00,  '2024-03-03 09:15:00'),
+    (19, '10000011', 'Payment',  250.00, 'Tacloban',    250.00, 450.00,  '2024-03-03 10:30:00'),
+    (20, '10000012', 'Cash-in', 1000.00, NULL,          NULL,  1000.00, '2024-03-03 11:45:00');
+
+INSERT INTO Users (UserID, Username, Email, Password, Role, RFID, CreatedAt)
+VALUES 
+    (1,  'johndoe',      'johndoe@example.com',      '$2b$10$5QZX.QyPv0QNfnCjhz5EYOYJWzEL3X5tGz6HqF3RBGKwO4YEQb0Uy', 'Passenger', '10000001', '2024-03-01 00:00:00'),
+    (2,  'janesmith',    'janesmith@example.com',    '$2b$10$5QZX.QyPv0QNfnCjhz5EYOYJWzEL3X5tGz6HqF3RBGKwO4YEQb0Uy', 'Passenger', '10000002', '2024-03-01 00:00:00'),
+    (3,  'maryjohnson',  'maryjohnson@example.com',  '$2b$10$5QZX.QyPv0QNfnCjhz5EYOYJWzEL3X5tGz6HqF3RBGKwO4YEQb0Uy', 'Passenger', '10000003', '2024-03-01 00:00:00'),
+    (4,  'admin',        'admin@example.com',        '$2b$10$5QZX.QyPv0QNfnCjhz5EYOYJWzEL3X5tGz6HqF3RBGKwO4YEQb0Uy', 'Admin',     NULL,        '2024-03-01 00:00:00'),
+    (5,  'operator1',    'operator1@example.com',    '$2b$10$5QZX.QyPv0QNfnCjhz5EYOYJWzEL3X5tGz6HqF3RBGKwO4YEQb0Uy', 'Operator',  NULL,        '2024-03-01 00:00:00'),
+    (6,  'operator2',    'operator2@example.com',    '$2b$10$5QZX.QyPv0QNfnCjhz5EYOYJWzEL3X5tGz6HqF3RBGKwO4YEQb0Uy', 'Operator',  NULL,        '2024-03-01 00:00:00'),
+    (7,  'jamesbrown',   'jamesbrown@example.com',   '$2b$10$5QZX.QyPv0QNfnCjhz5EYOYJWzEL3X5tGz6HqF3RBGKwO4YEQb0Uy', 'Passenger', '10000004', '2024-03-01 00:00:00'),
+    (8,  'patriciadavis','patriciadavis@example.com','$2b$10$5QZX.QyPv0QNfnCjhz5EYOYJWzEL3X5tGz6HqF3RBGKwO4YEQb0Uy', 'Passenger', '10000005', '2024-03-01 00:00:00'),
+    (9,  'michaelmiller','michaelmiller@example.com','$2b$10$5QZX.QyPv0QNfnCjhz5EYOYJWzEL3X5tGz6HqF3RBGKwO4YEQb0Uy', 'Passenger', '10000006', '2024-03-01 00:00:00'),
+    (10, 'lindawilson',  'lindawilson@example.com',  '$2b$10$5QZX.QyPv0QNfnCjhz5EYOYJWzEL3X5tGz6HqF3RBGKwO4YEQb0Uy', 'Passenger', '10000007', '2024-03-01 00:00:00');

@@ -20,12 +20,12 @@ exports.login = async (req, res) => {
         }
 
         const user = results[0];
-        // const validPassword = await bcrypt.compare(password, user.Password);
+        const validPassword = await bcrypt.compare(password, user.Password);
 
-        // if (!validPassword) {
-        //     console.log("invalid password")
-        //     return res.status(401).json({ message: 'Invalid username or password' });
-        // }
+        if (!validPassword) {
+            console.log("invalid password")
+            return res.status(401).json({ message: 'Invalid username or password' });
+        }
 
         const token = jwt.sign(
             { userId: user.UserID, role: user.Role },
